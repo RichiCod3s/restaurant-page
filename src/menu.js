@@ -4,7 +4,7 @@ export function loadMenuContent(){
     content.innerHTML = "";
     
     // Helper function to create an element with classes and text content
-function createElementWithClass(tag, className, innerHTML = "") {
+  function createElementWithClass(tag, className, innerHTML = "") {
     let element = document.createElement(tag);
     element.classList.add(className);
     element.innerHTML = innerHTML;
