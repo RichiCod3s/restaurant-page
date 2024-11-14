@@ -1,18 +1,10 @@
+import { createElementWithClass } from "./utils";
 
 export function loadContactContent(){
     let content = document.querySelector("#content");
 
     content.innerHTML = "";
 
-
-
-    // Helper function to create an element with classes and text content
-    function createElementWithClass(tag, className, innerHTML = "") {
-    let element = document.createElement(tag);
-    element.classList.add(className);
-    element.innerHTML = innerHTML;
-    return element;
-  }
 
     function createContactItem(name, role, number, email){
     let contactName = createElementWithClass("h3", "contactName", name);

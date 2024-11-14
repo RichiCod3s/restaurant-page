@@ -1,3 +1,5 @@
+import { createElementWithClass } from "./utils";
+
 
 export function loadHomeContent(){
 let content = document.querySelector("#content");
@@ -5,14 +7,6 @@ let content = document.querySelector("#content");
 //clear html
 content.innerHTML = "";
 
-
-// Helper function to create an element with classes and text content
-function createElementWithClass(tag, className, innerHTML = "") {
-  let element = document.createElement(tag);
-  element.classList.add(className);
-  element.innerHTML = innerHTML;
-  return element;
-}
 
 // Create elements
 let heading = createElementWithClass("h1", "heading", "Aileen's Rice is Life Breakfast");

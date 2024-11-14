@@ -1,15 +1,9 @@
+import { createElementWithClass } from "./utils";
+
 export function loadMenuContent(){
     let content = document.querySelector("#content");
 
     content.innerHTML = "";
-    
-    // Helper function to create an element with classes and text content
-  function createElementWithClass(tag, className, innerHTML = "") {
-    let element = document.createElement(tag);
-    element.classList.add(className);
-    element.innerHTML = innerHTML;
-    return element;
-  }
 
   function createMenuItem(title, description, price){
     let menuHeading = createElementWithClass("h3", "subHeading", title);
