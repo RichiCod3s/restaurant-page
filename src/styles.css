@@ -1,6 +1,83 @@
 /* styles.css */
 body {
-    background-color: rebeccapurple;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(https://cdn.pixabay.com/photo/2015/12/27/21/11/beach-1110498_1280.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  .nav{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
   }
   
 
+  #content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60rem;
+    height: 100vh;
+    color: #071d30;
+  }
+
+  .heading{
+    font-size: 4rem;
+  }
+  
+  .openingHoursContainer, .locationContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+.subHeading {
+    font-size: 3rem;
+    text-align: center;
+}
+
+p{
+  font-size: 2rem;
+}
+
+.openingHoursContainer, .location, .menuDescription, .menuPrice {
+  font-size: 2rem;
+}
+
+button{
+ height: 5rem;
+ width: 10rem;
+ border-radius: 10px;
+ background-image: url(https://cdn.pixabay.com/photo/2016/11/12/17/06/seagull-1819287_960_720.jpg);
+ background-repeat: no-repeat;
+ background-position: center;
+ background-size: cover;
+ font-size: 1.2rem;
+ font-weight:500;
+}
+
+.contactName{
+  font-size: 2.5rem;
+}
+
+.contactItem{
+  padding: 0;
+}
+
+button:hover{
+  background-image: url(https://cdn.pixabay.com/photo/2014/05/18/00/33/sun-346710_1280.png);
+}
+
+.contactInfo{
+  margin: 5px
+}
+
+.locationContainer{
+  margin: 3rem 0 0 0;
+}
